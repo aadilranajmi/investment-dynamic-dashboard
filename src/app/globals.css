@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.card-bg {
+  background: linear-gradient(to right, #efeee9, #ffffffc7);
+  box-shadow: -8px 8px 14px 2px #000000bf;
+  border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.card-shadow {
+  box-shadow: -8px 8px 14px 2px #000000bf;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.mainApp {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(to right, #a9bac1, #d3dce3);
 }

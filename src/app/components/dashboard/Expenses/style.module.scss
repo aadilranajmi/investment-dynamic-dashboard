@@ -1,0 +1,88 @@
+.expenseSell {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #302b25;
+    &::after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 2px;
+      background: #b0b0b0;
+      margin: 10px 0;
+      border-radius: 50%;
+    }
+  }
+  .expenseOverview {
+    p {
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .expenseOverviewHeighlight {
+      background: #dbdbdb26;
+      border-radius: 2px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-weight: 700;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.expensesCard {
+  padding-right: 20px;
+  padding-bottom: 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 1.5px;
+    height: 90%;
+    background: #b0b0b0;
+  }
+  .expenseCardDetails {
+    background: #587481;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      span:last-child {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.sellDetails {
+  padding-left: 20px;
+  position: relative;
+}
+
+.sellDetailsOverview {
+  font-size: 12px;
+  table {
+    width: 100%;
+    tr {
+        &:first-child {
+            border-top: 0;
+        }
+        border-top: 1px solid #e5e7eb;
+      td {
+        padding: 5px 0;
+        > div {
+          display: flex;
+          justify-content: space-between;
+          gap: 8px;
+        }
+      }
+    }
+  }
+}

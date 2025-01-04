@@ -1,0 +1,11 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  height: 100vh;
+  padding: 10px;
+}
+.masonry {
+    display: flex;
+    flex-wrap: wrap;
+}
